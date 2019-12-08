@@ -32,7 +32,7 @@ g = 0
 while True :
     gailv_list.append(gailv(qs,pl))
     g = g + 1
-    if g == 100 :
+    if g == 10000 :
         break
 
 print(gailv_list)

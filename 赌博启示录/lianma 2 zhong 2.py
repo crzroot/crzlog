@@ -1,19 +1,21 @@
-#开特码：1到49共49个数字，随机开2个数字。数字为一样的概率是多少？ 赔率：42
+#二中二：1到49共49个数字，随机开7个数字，然后在随机开2个数字 7个数包括那2个数的概率是多少？ 赔率：65.5
+
 import random
 qs = 100
-pl = 42
+pl = 65.5
 # qs == 期数（随机次数）  pl == 赔率  
 def gailv(qs,pl):
     i=0
     n=0
     while n < qs:
         n=n+1
-        a=random.sample(range(1,49),1)
-        b=random.sample(range(1,49),1)
+        a=random.sample(range(1,49),7)
+        b=random.sample(range(1,49),2)
+        #b = [2,14,26,39]
         print(a,"分割线",b,n)
         #对比两组是否有一样的数据 有则为1 否为0
         print(len(set(a)&set(b)))
-        if  len(set(a)&set(b)) != 0 :
+        if  len(set(a)&set(b)) == 2 :
             print("bingo")
             i = i+1
         else:
@@ -23,8 +25,7 @@ def gailv(qs,pl):
     y = i * pl - n
     print(i,n,"中的概率是",i/n*100,"%","结果：",y)
     return  y
-
-#写个结论  中的概率大约为2% 
+ 
 #gailv(150,42)
 
 gailv_list = []

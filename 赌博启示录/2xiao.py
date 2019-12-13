@@ -11,7 +11,7 @@ def gailv(qs,pl):
         n=n+1
         a=random.sample(range(1,49),7)
         #b=random.sample(range(1,49),1)
-        b = [2,14,26,39]
+        b = [2,14,26,38]
         c = [3,15,27,39]
         print(a,"分割线",c,b,n)
         #对比两组是否有一样的数据 有则为1 否为0

@@ -1,0 +1,8 @@
+insert into crz_2020 values 
+(null,"网易","www.163.com","web"),
+(null,"哔哩哔哩","www.bilibili.com","web"),
+(null,"谷歌","www.Google.com","web"),
+(null,"哔哩哔哩","www.bilibili.com","web"),
+(null,"淘宝","www.taobao.com","web"),
+(null,"斗鱼","www.douyu.com","web"),
+(null,"淘宝","www.taobao.com","web")
